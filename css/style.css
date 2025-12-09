@@ -211,71 +211,125 @@ button:hover,
     background: rgb(87, 152, 231);
 }
 
-/* ===== PRODUCT DETAIL ===== */
+/* ===== PRODUCT DETAIL NEW ===== */
 .detail-product {
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 50px auto;
+    padding: 40px;
     display: flex;
-    gap: 30px;
-    padding: 25px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    gap: 50px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
+/* LEFT IMG */
 .detail-left img {
-    width: 420px;
-    border-radius: 12px;
+    width: 480px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* RIGHT INFO */
+.detail-right {
+    flex: 1;
+}
+
+.detail-right h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
 }
 
 .detail-price {
-    font-size: 24px;
-    color: red;
+    font-size: 30px;
     font-weight: bold;
+    color: #e60023;
+    margin-bottom: 8px;
 }
 
-.green {
-    color: green;
+.detail-status {
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
-/* Màu sắc */
+.detail-status .green {
+    color: #2ecc71;
+    font-weight: 700;
+}
+
+/* Colors */
+h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
 .color-box {
     display: flex;
-    gap: 10px;
-    margin: 10px 0 20px;
+    gap: 14px;
+    margin-bottom: 25px;
 }
 
 .color-item {
-    width: 22px;
-    height: 22px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
-    border: 2px solid #ccc;
+    border: 2px solid #ddd;
     cursor: pointer;
+    transition: .2s;
+}
+
+.color-item:hover {
+    transform: scale(1.2);
+    border-color: #000;
 }
 
 .black {
-    background: black;
+    background: #000;
 }
 
 .silver {
-    background: silver;
+    background: #d9d9d9;
 }
 
 .blue {
-    background: #3b6db0;
+    background: #5478c7;
 }
 
+/* Button BUY */
 .btn-buy {
-    background: rgb(87, 152, 231);
-    padding: 10px 18px;
-    border-radius: 6px;
-    font-size: 16px;
+    background: #0a4a8e;
+    padding: 12px 20px;
     color: white;
+    font-size: 17px;
+    border-radius: 8px;
+    border: none;
+    transition: .25s;
+    font-weight: 600;
 }
 
 .btn-buy:hover {
-    background: #0a4a8e;
+    background: rgb(87, 152, 231);
+    transform: translateY(-2px);
 }
+
+/* Description */
+.detail-right h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.detail-desc {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
 
 /* ===== SIDEBAR CATEGORY ===== */
 .product-layout {
@@ -378,6 +432,85 @@ button:hover,
 .blog-btn:hover {
     background: rgb(87, 152, 231);
 }
+
+/* blog-detail */
+
+/* ===== BLOG DETAIL ===== */
+
+.blog-detail-banner {
+    background: linear-gradient(135deg, #0a1a2b, #123a63);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 50px;
+}
+
+.blog-detail-banner h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-detail-banner p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Container của nội dung */
+.blog-detail-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px 60px 20px;
+    line-height: 1.7;
+}
+
+.blog-detail-container h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #123a63;
+}
+
+.blog-detail-container p {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.blog-date {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Related Posts */
+.related-posts {
+    margin-top: 20px;
+    display: grid;
+    gap: 12px;
+}
+
+.related-posts a {
+    text-decoration: none;
+    color: #0a3a6b;
+    font-size: 17px;
+    transition: .2s;
+}
+
+.related-posts a:hover {
+    color: rgb(87, 152, 231);
+    padding-left: 6px;
+}
+
+.blog-detail-img {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: 0 auto 30px auto;
+    /* Canh giữa + khoảng cách dưới */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
 
 /* ===== ABOUT ===== */
 .about-section {
