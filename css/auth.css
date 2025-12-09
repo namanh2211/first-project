@@ -1,0 +1,79 @@
+/* Nền nhẹ */
+body {
+    background: #f2f2f2;
+    margin: 0;
+    font-family: system-ui, Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Khung form */
+.auth-container {
+    background: white;
+    width: 360px;
+    padding: 30px 28px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 15px;
+    color: rgb(87, 152, 231);
+}
+
+/* Input */
+form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: .2s;
+}
+
+form input:focus {
+    border-color: rgb(87, 152, 231);
+}
+
+/* Button */
+.auth-btn {
+    width: 100%;
+    padding: 10px 12px;
+    background: rgb(87, 152, 231);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    background: #0a4a8e;
+}
+
+/* Link dưới form */
+.auth-link {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.auth-link a {
+    color: rgb(87, 152, 231);
+    text-decoration: none;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
